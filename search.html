@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>جستجوی جامع — پایگاه جامع شهید حاج حسین خرازی</title>
+<meta name="description" content="جستجوی جامع در تمام محتوای پایگاه جامع شهید حاج حسین خرازی">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo-area">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIDe_MBObsT1JPt4enlDtT81B0lU7OofSAThyYapQjHDFJeCPmsSv2JUw&s=10" alt="شهید خرازی" class="logo-img" />
+  <span class="logo-text">
+    شهید حاج حسین خرازی
+    <small>پایگاه جامع چندرسانه‌ای</small>
+  </span>
+</a>
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="biography.html">زندگی‌نامه</a></li>
+        <li><a href="will.html">وصیت‌نامه</a></li>
+        <li><a href="timeline.html">تایم‌لاین</a></li>
+        <li><a href="gallery.html">گالری</a></li>
+        <li><a href="videos.html">فیلم‌ها</a></li>
+        <li><a href="books.html">کتاب‌ها</a></li>
+        <li><a href="researches.html">پژوهش‌ها</a></li>
+        <li><a href="audio.html">صوت‌ها</a></li>
+        <li><a href="notes.html">یادداشت‌ها</a></li>
+        <li><a href="delneveshte.html">دل‌نوشته</a></li>
+        <li><a href="contact.html">ارتباط</a></li>
+        <li><a href="support.html">حمایت</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="منو">☰</button>
+  </div>
+</header>
+
+<div class="mobile-nav">
+  <button class="close-btn" aria-label="بستن">✕</button>
+  <ul>
+    <li><a href="index.html">خانه</a></li>
+    <li><a href="biography.html">زندگی‌نامه</a></li>
+    <li><a href="will.html">وصیت‌نامه</a></li>
+    <li><a href="timeline.html">تایم‌لاین</a></li>
+    <li><a href="gallery.html">گالری</a></li>
+    <li><a href="videos.html">فیلم‌ها</a></li>
+    <li><a href="books.html">کتاب‌ها</a></li>
+    <li><a href="researches.html">پژوهش‌ها</a></li>
+    <li><a href="audio.html">صوت‌ها</a></li>
+    <li><a href="notes.html">یادداشت‌ها</a></li>
+    <li><a href="delneveshte.html">دل‌نوشته</a></li>
+    <li><a href="contact.html">ارتباط</a></li>
+    <li><a href="support.html">حمایت</a></li>
+  </ul>
+</div>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>🔍 جستجوی جامع</h1>
+      <p>در تمام محتوای پایگاه جستجو کنید — عکس، فیلم، کتاب، پژوهش، یادداشت، صوت و...</p>
+    </div>
+  </section>
+
+  <div class="container">
+
+    <div class="search-big">
+      <input type="search" id="big-search" placeholder="مثلاً: طریق‌القدس، مدیریت جهادی، شلمچه، لشکر ۱۴..." autofocus>
+      <span class="search-icon">🔍</span>
+    </div>
+
+    <div class="filter-bar" style="justify-content:center;">
+      <button class="filter-chip active" data-filter="all">همه</button>
+      <button class="filter-chip" data-filter="photo">🖼️ عکس</button>
+      <button class="filter-chip" data-filter="video">🎬 فیلم</button>
+      <button class="filter-chip" data-filter="book">📚 کتاب</button>
+      <button class="filter-chip" data-filter="research">📄 پژوهش</button>
+      <button class="filter-chip" data-filter="note">📰 یادداشت</button>
+      <button class="filter-chip" data-filter="audio">🎧 صوت</button>
+      <button class="filter-chip" data-filter="del">💌 دل‌نوشته</button>
+    </div>
+
+    <div id="search-status" class="search-status"></div>
+
+    <div id="search-results" class="cards-grid"></div>
+
+  </div>
+
+</main>
+
+
+<footer>
+  <div class="container">
+
+    <!-- بخش بالایی: چهار ستون لینک -->
+    <div class="footer-main">
+
+      <!-- ستون ۱: زندگی شهید -->
+      <div class="footer-col">
+        <h4><span class="col-icon">📖</span> زندگی شهید</h4>
+        <ul>
+          <li><a href="biography.html">زندگی‌نامه</a></li>
+          <li><a href="will.html">وصیت‌نامه</a></li>
+          <li><a href="timeline.html">تایم‌لاین زندگی</a></li>
+        </ul>
+      </div>
+
+      <!-- ستون ۲: آرشیو -->
+      <div class="footer-col">
+        <h4><span class="col-icon">📸</span> آرشیو</h4>
+        <ul>
+          <li><a href="gallery.html">گالری تصاویر</a></li>
+          <li><a href="videos.html">فیلم‌ها و مستندها</a></li>
+          <li><a href="audio.html">صوت‌ها</a></li>
+        </ul>
+      </div>
+
+      <!-- ستون ۳: پژوهش و یادداشت -->
+      <div class="footer-col">
+        <h4><span class="col-icon">📄</span> پژوهش و یادداشت</h4>
+        <ul>
+          <li><a href="books.html">کتاب‌ها</a></li>
+          <li><a href="researches.html">پژوهش‌های علمی</a></li>
+          <li><a href="notes.html">یادداشت‌ها</a></li>
+        </ul>
+      </div>
+
+      <!-- ستون ۴: همراه ما باشید -->
+      <div class="footer-col">
+        <h4><span class="col-icon">🤝</span> همراه ما باشید</h4>
+        <ul>
+          <li><a href="contact.html">ارتباط با ما و ارسال دل‌نوشته</a></li>
+          <li><a href="support.html">حمایت از ما</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="contact.html" title="ارتباط">✉</a>
+          <a href="support.html" title="حمایت">💚</a>
+          <a href="search.html" title="جستجو">🔍</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- بخش پایینی: برند + نقل قول -->
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-brand-logo">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIDe_MBObsT1JPt4enlDtT81B0lU7OofSAThyYapQjHDFJeCPmsSv2JUw&s=10" alt="شهید حاج حسین خرازی">
+        </div>
+        <div class="footer-brand-text">
+          <h3>پایگاه جامع<br>شهید حاج حسین خرازی</h3>
+          <span class="footer-tagline">علمدار جبهه‌ها — لشکر ۱۴ امام حسین (ع)</span>
+          <p>این پایگاه به صورت مردمی و داوطلبانه، برای معرفی و پاسداشت یاد و خاطره شهید حاج حسین خرازی ساخته شده است.</p>
+        </div>
+      </div>
+
+      <div class="footer-quote">
+        <blockquote>«اگر کار برای خداست، پس گفتن برای چه»</blockquote>
+        <cite>— شهید حاج حسین خرازی</cite>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/data-gallery.js"></script>
+<script src="js/data-videos.js"></script>
+<script src="js/data-books.js"></script>
+<script src="js/data-researches.js"></script>
+<script src="js/data-audio.js"></script>
+<script src="js/data-notes.js"></script>
+<script src="js/data-delneveshte.js"></script>
+<script>
+// ==================== ساخت ایندکس جستجو از همه فایل‌های داده ====================
+// این ایندکس خودکار از فایل‌های data-*.js ساخته می‌شه
+const searchIndex = [];
+
+// از داده‌های گالری
+if (typeof galleryItems !== 'undefined') {
+  galleryItems.forEach(g => {
+    searchIndex.push({
+      type: 'photo',
+      title: g.title,
+      desc: g.note || '',
+      link: 'gallery.html',
+      img: g.img,
+      test: g.test || false
+    });
+  });
+}
+
+// از داده‌های فیلم
+if (typeof videoItems !== 'undefined') {
+  videoItems.forEach(v => {
+    searchIndex.push({
+      type: 'video',
+      title: v.title,
+      desc: v.desc || '',
+      link: 'videos.html',
+      img: v.poster,
+      test: v.test || false
+    });
+  });
+}
+
+// از داده‌های کتاب
+if (typeof bookItems !== 'undefined') {
+  bookItems.forEach(b => {
+    searchIndex.push({
+      type: 'book',
+      title: b.title,
+      desc: (b.author ? b.author + ' — ' : '') + (b.short || ''),
+      link: 'books.html',
+      img: b.img,
+      test: b.test || false
+    });
+  });
+}
+
+// از داده‌های پژوهش
+if (typeof researchItems !== 'undefined') {
+  researchItems.forEach(r => {
+    searchIndex.push({
+      type: 'research',
+      title: r.title,
+      desc: r.abstract || '',
+      link: 'researches.html',
+      img: r.img,
+      test: r.test || false
+    });
+  });
+}
+
+// از داده‌های صوت
+if (typeof audioItems !== 'undefined') {
+  audioItems.forEach(a => {
+    searchIndex.push({
+      type: 'audio',
+      title: a.title,
+      desc: a.desc || '',
+      link: 'audio.html',
+      img: 'https://placehold.co/600x400/4A7C59/E8DFC9?text=%D8%B5%D9%88%D8%AA',
+      test: a.test || false
+    });
+  });
+}
+
+// از داده‌های یادداشت
+if (typeof noteItems !== 'undefined') {
+  noteItems.forEach(n => {
+    searchIndex.push({
+      type: 'note',
+      title: n.title,
+      desc: n.short || '',
+      link: 'notes.html',
+      img: n.img,
+      test: n.test || false
+    });
+  });
+}
+
+// از داده‌های دل‌نوشته
+if (typeof delItems !== 'undefined') {
+  delItems.forEach((d, i) => {
+    searchIndex.push({
+      type: 'del',
+      title: 'دل‌نوشته ' + d.author,
+      desc: d.text.substring(0, 80) + '...',
+      link: 'delneveshte.html',
+      img: 'https://placehold.co/600x400/A89B7E/2C2C2C?text=%D8%AF%D9%84+%D9%86%D9%88%D8%B4%D8%AA%D9%87',
+      test: d.test || false
+    });
+  });
+}
+
+// ==================== رندر نتایج ====================
+const resultsEl = document.getElementById('search-results');
+const statusEl = document.getElementById('search-status');
+const bigSearch = document.getElementById('big-search');
+let activeFilter = 'all';
+
+function typeLabel(type) {
+  return {
+    photo: 'عکس', video: 'فیلم', book: 'کتاب', research: 'پژوهش',
+    note: 'یادداشت', audio: 'صوت', del: 'دل‌نوشته', page: 'صفحه'
+  }[type] || type;
+}
+
+function renderResults() {
+  const query = bigSearch.value.trim().toLowerCase();
+  resultsEl.innerHTML = '';
+
+  let filtered = searchIndex.filter(item => {
+    const matchFilter = activeFilter === 'all' || item.type === activeFilter;
+    const matchQuery = !query ||
+      item.title.toLowerCase().includes(query) ||
+      item.desc.toLowerCase().includes(query);
+    return matchFilter && matchQuery;
+  });
+
+  if (filtered.length === 0) {
+    statusEl.innerHTML = `<p style="text-align:center; color:var(--text-muted);">نتیجه‌ای یافت نشد. کلیدواژه دیگری امتحان کنید.</p>`;
+    return;
+  }
+
+  statusEl.innerHTML = `<p>${filtered.length} نتیجه یافت شد${query ? ` برای «${bigSearch.value.trim()}»` : ''}.</p>`;
+
+  filtered.forEach(item => {
+    const card = document.createElement('article');
+    card.className = 'card';
+    card.innerHTML = `
+      <img class="card-img" src="${item.img}" alt="${item.title}">
+      <div class="card-body">
+        <span class="tag tag-zarshaki" style="align-self:flex-start;">${typeLabel(item.type)}</span>
+        <h3>${item.title} ${item.test ? '<span class="badge-test">نمونه</span>' : ''}</h3>
+        <p>${item.desc}</p>
+        <a href="${item.link}" class="btn btn-primary btn-sm mt-2">مشاهده ←</a>
+      </div>
+    `;
+    resultsEl.appendChild(card);
+  });
+}
+
+bigSearch.addEventListener('input', renderResults);
+
+document.querySelectorAll('.filter-chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    activeFilter = chip.dataset.filter;
+    renderResults();
+  });
+});
+
+const params = new URLSearchParams(location.search);
+if (params.get('q')) {
+  bigSearch.value = params.get('q');
+}
+
+renderResults();
+</script>
+</body>
+</html>
